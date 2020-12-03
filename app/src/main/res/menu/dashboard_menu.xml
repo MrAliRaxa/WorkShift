@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menuRateUs"
+        android:title="Rate Us"
+        />
+    <item
+        android:id="@+id/menuShare"
+        android:title="Share"
+        />
+    <item
+        android:id="@+id/menuSetting"
+        android:title="Setting"
+        />
+    <item
+        android:id="@+id/menuBackup"
+        android:title="Backup And Restore"
+        />
+    <item
+        android:id="@+id/menuPrivacyPolicy"
+        android:title="Privacy Policy"
+        />
+
+    <item
+        android:id="@+id/menuTermsOfService"
+        android:title="Terms of Services"
+        />
+</menu>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLight">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            app:contentInsetStart="0.0dip"
+            app:contentInsetStartWithNavigation="0.0dip"
+            app:theme="@style/toolBar"
+            app:titleTextColor="@color/colorDarkNavy" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/bgColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:text="@string/general" />
+
+    <TextView
+        android:id="@+id/txtFirstDay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/bg_layout"
+        android:fontFamily="@font/muli"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/first_day_of_week"
+        android:textColor="@color/colorDarkNavy"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/txtDateFormat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/bg_layout"
+        android:fontFamily="@font/muli"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/date_format"
+        android:textColor="@color/colorDarkNavy"
+        android:textSize="@dimen/_12ssp" />
+
+    <RelativeLayout
+        android:id="@+id/rlDailyReminder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/bg_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:padding="@dimen/_8sdp"
+            android:text="Daily Reminder"
+            android:textColor="@color/colorDarkNavy"
+            android:textSize="@dimen/_12ssp" />
+
+        <CheckBox
+            android:id="@+id/cbDailyReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:button="@drawable/custom_checkbox"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rlDailyReminderTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/bg_layout"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:fontFamily="@font/muli"
+            android:text="Reminder Time"
+            android:textColor="@color/colorDarkNavy"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/txtDailyReminderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:00"
+            android:textColor="@color/colorDarkNavy"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+</LinearLayout>

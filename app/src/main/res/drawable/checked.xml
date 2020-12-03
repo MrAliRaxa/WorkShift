@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <corners android:radius="1.0dip" />
+                    <solid android:color="@color/colorLight" />
+                    <size android:height="18.0dip" android:width="18.0dip" />
+                </shape>
+            </item>
+            <item android:height="18.0dip" android:width="18.0dip">
+                <bitmap android:src="@drawable/cheak" android:tint="@color/colorOrange" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

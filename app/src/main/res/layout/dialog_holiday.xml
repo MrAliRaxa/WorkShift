@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_12sdp"
+    android:layout_marginRight="@dimen/_12sdp"
+    android:orientation="vertical"
+  >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="0.0dip"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/semi_bold"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/holiday"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12ssp" />
+
+                <CheckBox
+                    android:id="@+id/cbHoliday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:button="@drawable/checkbox_holiday" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etHolidayNotes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@color/colorLight"
+                android:fontFamily="@font/semi_bold"
+                android:gravity="center|left|top"
+                android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                android:minLines="3"
+                android:padding="@dimen/_5sdp"
+                android:tag="binding_1"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_12ssp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/llCancel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_btn_cancel"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="@string/cancel"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkNavy"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llOk"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_ok"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="@string/ok"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

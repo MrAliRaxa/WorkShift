@@ -1,0 +1,214 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="CalendarView" />
+    <style name="CalendarView.DayOfTheMonth" parent="@style/CalendarView">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:minHeight">@dimen/minDayCellHeight</item>
+    </style>
+    <style name="CalendarView.DayOfTheWeek" parent="@style/CalendarView">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="CalendarView.MonthTitle" parent="@style/CalendarView">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="CardView" parent="@style/Base.CardView" />
+    <style name="CardView.Dark" parent="@style/CardView">
+        <item name="cardBackgroundColor">@color/cardview_dark_background</item>
+    </style>
+    <style name="CardView.Light" parent="@style/CardView">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <style name="EasyPermissions" parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="EasyPermissions.Transparent" parent="@style/EasyPermissions">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="ExtraTime">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="ExtraTime1">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="PickerEditText">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+
+
+    <style name="bgColor">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="btnCancel">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="btnOk">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="calendarName">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="date">
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="date1">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="dayNote">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="dayView">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="dialogTitle">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="editText">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+    <style name="erase">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+    <style name="from">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="menu_labels_style">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+    <style name="shiftName">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+    <style name="shiftName1">
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="statTitle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="statValue">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+    <style name="statValue1">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="statValue2">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="statValue3">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="statistics">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="sum">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="sumValue">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="swText">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDarkNavy</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="tabTitle">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+    <style name="times">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+    <style name="toolBar">
+        <item name="android:textColorSecondary">@color/colorDarkNavy</item>
+    </style>
+    <style name="value">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+</resources>

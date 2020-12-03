@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginRight="@dimen/_8sdp"
+    android:padding="@dimen/_4sdp"
+    android:tag="layout/item_calendar_0">
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:padding="@dimen/_2ssp"
+        android:src="@drawable/writing" />
+
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_toStartOf="@+id/ivOrder"
+        android:layout_toEndOf="@+id/ivEdit"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:text="Calendar 1" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivOrder"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/_2ssp"
+        android:src="@drawable/drag_reorder" />
+</RelativeLayout>

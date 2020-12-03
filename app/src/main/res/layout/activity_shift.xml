@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorLight">
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_toEndOf="@+id/ivCalendar"
+                android:background="@color/colorPrimary"
+                app:theme="@style/toolBar"
+                app:titleTextColor="@color/colorDarkNavy" />
+
+            <ImageView
+                android:id="@+id/ivCalendar"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:src="@drawable/ic_date2"
+                app:tint="@color/colorDarkNavy" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvShift"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rlTop" />
+
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/fabNewShift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_8sdp"
+            app:fab_colorNormal="@color/colorOrange"
+            app:fab_colorPressed="@color/colorOrange" />
+    </RelativeLayout>
+</layout>

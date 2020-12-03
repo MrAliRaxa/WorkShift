@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_12sdp"
+    android:layout_marginRight="@dimen/_12sdp"
+    android:orientation="vertical"
+>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="0.0dip"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlue"
+                android:fontFamily="@font/semi_bold"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/alarms"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:background="@drawable/bg_layout"
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rlFirstAlarm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/muli"
+                        android:text="@string/note_s_reminder_alarm_1"
+                        android:textColor="@color/colorDarkNavy"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <CheckBox
+                        android:id="@+id/cbFirstAlarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/custom_checkbox"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorDarkNavy"
+                        android:textSize="@dimen/_12ssp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llFirstAlarm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/llFirstBefore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cbFirstBefore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_checkbox" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:fontFamily="@font/muli"
+                                android:text="@string/the_day_before"
+                                android:textColor="@color/colorDarkNavy"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/muli"
+                                android:src="@drawable/clock"
+                                android:textColor="@color/colorDarkGray"
+                                android:textSize="@dimen/_12ssp"
+                                app:tint="@color/colorDarkNavy" />
+
+                            <TextView
+                                android:id="@+id/txtFirstAlarmTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:fontFamily="@font/muli"
+                                android:gravity="center"
+                                android:text="0:00 AM"
+                                android:textColor="@color/colorDarkNavy"
+                                android:textSize="@dimen/_12ssp"
+                                app:tint="@color/colorDarkNavy" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/bg_edit"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_2sdp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:src="@drawable/music" />
+
+                        <TextView
+                            android:id="@+id/txtFirstAlarmSound"
+                            style="@style/editText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:text="@string/default_sound" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:background="@drawable/bg_layout"
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rlSecondAlarm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/muli"
+                        android:text="@string/note_s_remider_alarm_2"
+                        android:textColor="@color/colorDarkNavy"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <CheckBox
+                        android:id="@+id/cbSecondAlarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/custom_checkbox"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorDarkNavy"
+                        android:textSize="@dimen/_12ssp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSecondAlarm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:id="@+id/llSecondBefore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/cbSecondBefore"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/custom_checkbox" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/muli"
+                                    android:text="@string/the_day_before"
+                                    android:textColor="@color/colorDarkNavy"
+                                    android:textSize="@dimen/_12ssp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/clock"
+                                    app:tint="@color/colorDarkNavy" />
+
+                                <TextView
+                                    android:id="@+id/txtSecondAlarmTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:fontFamily="@font/muli"
+                                    android:text="0:00 AM"
+                                    android:textColor="@color/colorDarkNavy"
+                                    android:textSize="@dimen/_12ssp"
+                                    app:tint="@color/colorDarkNavy" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/bg_edit"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_2sdp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:src="@drawable/music" />
+
+                        <TextView
+                            android:id="@+id/txtSecondAlarmSound"
+                            style="@style/editText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:text="@string/default_sound" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/llCancel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_btn_cancel"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/semi_bold"
+                        android:gravity="center"
+                        android:text="@string/cancel"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkNavy"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llOk"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_ok"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/semi_bold"
+                        android:gravity="center"
+                        android:text="@string/ok"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
